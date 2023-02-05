@@ -460,11 +460,9 @@ nav,
 .arrow__btn-black li {
   border: 1px solid var(--main-black-color);
 }
-.banner-series {
+.banner-series__container {
   background-color: var(--main-yellow-color);
   padding-top: 80px;
-}
-.banner-series__container {
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -483,7 +481,7 @@ nav,
   margin-bottom: 64px;
   color: var(--main-dark-blue-color);
 }
-.banner-series .main__btn,
+.banner-series__btn .main__btn,
 .events__right-part .main__btn {
   border-color: #ffffff;
   background-color: #ffffff;
@@ -494,6 +492,7 @@ nav,
 }
 .banner-episodes__right-part {
   padding: 80px 20px;
+  background-color: var(--main-light-color);
 }
 .listen__btn {
   margin-top: 32px;
@@ -505,6 +504,7 @@ nav,
   padding-left: 30px;
   padding-right: 30px;
   margin-top: 64px;
+  background-color: #ffffff;
 }
 .voice__icon {
   margin-right: 22px;
@@ -712,6 +712,9 @@ nav,
     flex-wrap: wrap;
     justify-content: center;
   }
+  .casetypes__left-part-list li {
+    margin-bottom: 20px;
+  }
   .videosondemand__list {
     margin-bottom: 46px;
   }
@@ -772,7 +775,7 @@ nav,
     right: 10px;
   }
   .email__input input {
-    width: 506px;
+    width: 378px;
   }
 }
 .email__text p:first-child {
@@ -828,6 +831,7 @@ nav,
     color: #000000;
     margin-top: 10px;
     margin-right: 50px;
+    margin-bottom: 0;
   }
   .hero__menu li:last-child {
     margin-right: 0;
@@ -872,6 +876,10 @@ nav,
   .verdicts__title {
     width: 72px;
   }
+  .casetypes__container {
+    padding-top: 20px;
+    padding-bottom: 44px;
+  }
   .casetypes__wrap {
     display: flex;
     flex-wrap: nowrap;
@@ -886,8 +894,9 @@ nav,
     font-size: 98px;
     line-height: 111%;
   }
-
-  .resource__container {
+  .resource__container,
+  .banner-series__container,
+  .banner-episodes__container {
     width: 1375px;
     margin: 0 auto;
   }
@@ -915,6 +924,100 @@ nav,
   .resource__btn {
     max-width: 492px;
   }
+  .banner-series__container {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 66px;
+    padding-right: 64px;
+    padding-bottom: 44px;
+  }
+  .banner-series__wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .banner-series__text {
+    width: 50%;
+  }
+  .banner-series__text p:first-child {
+    font-family: "IvyPresto-Light";
+    font-weight: 100;
+    font-size: 80px;
+    line-height: 91%;
+  }
+  .banner-series__text p:last-child {
+    margin-bottom: 0;
+  }
+  .banner-series__btn {
+    width: 36%;
+    margin-bottom: 0;
+  }
+  .banner-series__img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .banner-episodes {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .banner-episodes__container {
+    display: flex;
+  }
+  .banner-episodes__left-part {
+    width: 51%;
+  }
+
+  .banner-episodes__left-part img {
+    width: 447px;
+    height: 447px;
+  }
+  .banner-episodes__right-part {
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 76px 64px 39px 44px;
+    margin-left: 10px;
+    align-items: center;
+  }
+  .banner-episodes__right-part-text {
+    width: 63%;
+  }
+  .banner-episodes__title {
+    font-family: "IvyPresto-Light";
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 120%;
+  }
+  .banner-episodes__btn::before {
+    position: absolute;
+    display: block;
+    content: "";
+    opacity: 0.4;
+    width: 1px;
+    height: 100px;
+    top: 190px;
+    right: 427px;
+    background-color: var(--main-dark-blue-color);
+  }
+  .banner-episodes__btn .main__btn {
+    margin-top: 0;
+  }
+  .events__container {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .events__container-line {
+    opacity: 0.2;
+    border-top: 1px solid #ffffff;
+    margin-bottom: 20px;
+  }
+  .events__title {
+    text-align: start;
+    margin-bottom: 48px;
+    margin-left: 30px;
+  }
   .events__wrap {
     display: flex;
     justify-content: space-between;
@@ -925,5 +1028,15 @@ nav,
   }
   .events__right-part {
     width: 49%;
+  }
+  .email__text p:first-child {
+    text-transform: initial;
+    font-weight: 300;
+    font-size: 64px;
+  }
+  .email__text p:last-child {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.17em;
   }
 }
