@@ -384,7 +384,6 @@ nav,
 }
 .casetypes__left-part-list p {
   font-weight: 700;
-
   font-size: 20px;
   line-height: 130%;
   color: #ffffff;
@@ -801,6 +800,64 @@ nav,
 .text-content__list li:last-child img {
   margin-right: 5px;
 }
+.info-page__img {
+  margin: 0 auto 32px auto;
+}
+.casetypes__page-container {
+  padding-bottom: 96px;
+}
+.casetypes__list li {
+  max-width: 325px;
+  height: 325px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-right: 45px;
+  padding-left: 45px;
+  margin-bottom: 20px;
+}
+.casetypes__list li:nth-child(-n + 4) {
+  background-color: #255096;
+}
+.casetypes__list li:nth-child(-n + 4) p {
+  color: var(--main-light-color);
+}
+.casetypes__list li:nth-child(n + 5),
+.auto-accidents .casetypes__list li {
+  background-color: var(--main-light-color);
+}
+.casetypes__list li:nth-child(n + 5) p,
+.auto-accidents .casetypes__list li p {
+  color: #06022f;
+}
+.casetypes__list li:hover,
+.casetypes__list li:focus {
+  background-color: var(--main-dark-blue-color);
+}
+.casetypes__list li:nth-child(n + 5):hover p,
+.casetypes__list li:nth-child(n + 5):focus p,
+.auto-accidents .casetypes__list li:hover p,
+.auto-accidents .casetypes__list li:focus p {
+  color: var(--main-light-color);
+}
+.casetypes__list p {
+  text-align: center;
+}
+.casetypes__list img {
+  margin: 0 auto;
+}
+.casetypes__list p {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  margin-top: 45px;
+}
+.auto-accidents p {
+  margin-top: 0;
+}
 @media screen and (min-width: 768px) {
   .hero__wrap {
     display: flex;
@@ -953,6 +1010,18 @@ nav,
   }
   .post__btn {
     margin-top: 24px;
+  }
+  .casetypes__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-top: -20px;
+  }
+  .casetypes__list li {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    flex-basis: calc((100% - 2 * 20px) / 2);
   }
 }
 
@@ -1349,9 +1418,29 @@ nav,
     margin: 0 auto;
     justify-content: center;
   }
+  .casetypes__page-container {
+    padding-bottom: 120px;
+  }
+  .casetypes__list li,
+  .auto-accidents .casetypes__list li {
+    flex-basis: calc((100% - 3 * 20px) / 3);
+  }
+  .casetypes__list li:last-child p {
+    font-size: 21px;
+  }
+  .auto-accidents .casetypes__list {
+    max-width: 1015px;
+    margin: 0 auto;
+  }
+  .auto-accidents .casetypes__list li:last-child p {
+    font-size: 24px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .posts__item {
     zoom: 1;
+  }
+  .casetypes__list li {
+    flex-basis: calc((100% - 4 * 20px) / 4);
   }
 }
