@@ -47,7 +47,8 @@ h1,
 h2,
 h3,
 p,
-ul {
+ul,
+ol {
   margin: 0;
   padding: 0;
 }
@@ -56,6 +57,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   margin: 0;
+  color: var(--main-dark-blue-color);
 }
 
 a {
@@ -175,7 +177,7 @@ nav,
   color: var(--main-blue-color);
 }
 .post__left-part .watch__btn .listen__btn,
-.read__btn {
+.post__left-part .read__btn {
   margin-top: 24px;
 }
 .watch__btn img {
@@ -193,13 +195,13 @@ nav,
 .content__title,
 .title,
 .banner-episodes__title,
-.events__right-part-title {
+.events__right-part-title,
+.info-page__title {
   font-family: "Playfair Display SC", serif;
   font-weight: 400;
   font-size: 28px;
   line-height: 120%;
   text-transform: uppercase;
-  color: var(--main-dark-blue-color);
 }
 .content__title,
 .title {
@@ -217,7 +219,6 @@ nav,
   font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
-  color: var(--main-dark-blue-color);
 }
 .content__text,
 .videosondemand__text,
@@ -244,7 +245,6 @@ nav,
   font-family: "Proxima Nova Rg";
   font-weight: bold;
   font-size: 20px;
-  color: var(--main-dark-blue-color);
 }
 .main__btn:hover,
 .main__btn:focus {
@@ -349,19 +349,20 @@ nav,
   padding-top: 80px;
   padding-bottom: 80px;
 }
-.casetypes__title,
-.resource__title,
-.resource__list p,
-.videosondemand__title,
-.banner-episodes__title-secondary,
-.events__title {
+.title__secondary,
+.resource__list p {
   font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
   margin-bottom: 28px;
+  letter-spacing: 0.17em;
 }
-.casetypes__title,
-.events__title {
+.title__secondary,
+.resource__list p {
+  color: var(--main-black-color);
+}
+.casetypes .title__secondary,
+.events .title__secondary {
   color: #ffffff;
 }
 .casetypes__left-part ul {
@@ -417,13 +418,11 @@ nav,
 .resource__container {
   padding-top: 80px;
 }
-.resource__title,
-.resource__list p,
-.videosondemand__title,
-.banner-episodes__title-secondary {
+.title__secondary,
+.resource__list p {
   color: var(--main-black-color);
 }
-.resource__title {
+.resource .title__secondary {
   margin-left: 20px;
 }
 .resource__list li:first-child {
@@ -495,7 +494,7 @@ nav,
   font-weight: 400;
   font-size: 40px;
   line-height: 91%;
-  color: var(--main-dark-blue-color);
+
   margin-bottom: 16px;
 }
 .banner-series__text p:last-child {
@@ -503,7 +502,6 @@ nav,
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 64px;
-  color: var(--main-dark-blue-color);
 }
 .banner-series__btn .main__btn,
 .events__right-part .main__btn {
@@ -536,7 +534,7 @@ nav,
 .events {
   background-color: var(--main-dark-gray-color);
 }
-.events__title {
+.events .title__secondary {
   text-align: center;
 }
 .events__left-part {
@@ -588,7 +586,7 @@ nav,
   line-height: 130%;
   letter-spacing: 0.17em;
   text-transform: uppercase;
-  color: var(--main-dark-blue-color);
+
   margin-bottom: 28px;
 }
 .events__right-part-text-wrap span {
@@ -602,7 +600,6 @@ nav,
   text-decoration: underline;
   font-weight: 600;
   font-size: 20px;
-  color: var(--main-dark-blue-color);
 }
 .location__btn img {
   margin-right: 10px;
@@ -678,13 +675,7 @@ nav,
   padding-top: 72px;
   padding-bottom: 80px;
 }
-.info-page__title {
-  font-family: "Playfair Display SC", serif;
-  font-weight: 400;
-  font-size: 40px;
-  color: var(--main-dark-blue-color);
-  margin-bottom: 16px;
-}
+
 .info-page__text {
   margin-top: 36px;
 }
@@ -858,6 +849,95 @@ nav,
 .auto-accidents p {
   margin-top: 0;
 }
+.text-content .video__time {
+  margin-bottom: 24px;
+}
+.recent-verdict-chart {
+  background-color: var(--main-light-color);
+}
+.recent-verdict-chart__container {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+.recent-verdict-chart__list {
+  margin-bottom: 40px;
+}
+.recent-verdict-chart__list li:first-child {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.17em;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+.recent-verdict-chart__list li:nth-child(2) {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 130%;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+.recent-verdict-chart__list li:last-child {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.text-content__container--padding {
+  padding-top: 16px;
+}
+.text-content .title {
+  margin-top: 56px;
+}
+.list__container ol,
+.list__container ul {
+  padding-left: 20px;
+  margin-top: 24px;
+}
+.list__container ul {
+  list-style-type: inherit;
+}
+.list__container li {
+  font-weight: 400;
+  font-size: 20px;
+  width: 100%;
+}
+.text-content__title-secondary {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.42;
+  margin-top: 24px;
+}
+.tags {
+  display: none;
+}
+.info-page__title {
+  margin-bottom: 16px;
+}
+.text-content__people {
+  padding-top: 72px;
+}
+.text-content__people img {
+  width: 208px;
+  height: 208px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.text-content__people li:first-child {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 400;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.text-content__people li:nth-child(2),
+.text-content__people li:last-child {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
 @media screen and (min-width: 768px) {
   .hero__wrap {
     display: flex;
@@ -1023,6 +1103,20 @@ nav,
     margin-bottom: 0;
     flex-basis: calc((100% - 2 * 20px) / 2);
   }
+  .recent-verdict-chart__list {
+    text-align: center;
+  }
+  .list__container {
+    display: flex;
+    justify-content: center;
+  }
+  .text-content__people {
+    display: flex;
+    align-items: center;
+  }
+  .text-content__people img {
+    margin-right: 82px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -1128,11 +1222,11 @@ nav,
     opacity: 0.2;
     border-top: 1px solid #ffffff;
   }
-  .casetypes__title,
-  .resource__title,
-  .videosondemand__title,
+  .casetypes .title__secondary,
+  .resource .title__secondary,
+  .videosondemand .title__secondary,
   .banner-episodes__title-secondary,
-  .events__title {
+  .events .title__secondary {
     margin-bottom: 35px;
     margin-left: 30px;
   }
@@ -1312,7 +1406,7 @@ nav,
     border-top: 1px solid #ffffff;
     margin-bottom: 20px;
   }
-  .events__title {
+  .events .title__secondary {
     text-align: start;
     margin-bottom: 48px;
   }
@@ -1341,7 +1435,6 @@ nav,
     font-family: "IvyPresto-Light";
     font-weight: 300;
     font-size: 60px;
-    margin-bottom: 0;
   }
   .posts__container {
     margin-bottom: 120px;
@@ -1371,8 +1464,8 @@ nav,
     width: 44%;
   }
   .post__right-part .watch__btn,
-  .post__btn,
-  .read__btn {
+  .post__right-part .post__btn,
+  .post__right-part .read__btn {
     position: absolute;
     bottom: 15px;
   }
@@ -1432,8 +1525,75 @@ nav,
     max-width: 1015px;
     margin: 0 auto;
   }
+  .text-content .video__time {
+    margin-bottom: 36px;
+  }
+  .recent-verdict-chart__container {
+    padding-top: 30px;
+    padding-bottom: 105px;
+  }
+  .recent-verdict-chart__list {
+    margin-bottom: 80px;
+  }
+  .recent-verdict-chart__list li:nth-child(2) {
+    font-family: "IvyPresto-Light";
+    font-weight: 300;
+    text-transform: inherit;
+  }
   .auto-accidents .casetypes__list li:last-child p {
     font-size: 24px;
+  }
+  .text-content__container--padding {
+    padding-top: 36px;
+  }
+  .text-content .title {
+    margin-top: 36px;
+  }
+  .text-content__container-secondary {
+    max-width: 1100px;
+    padding-left: 90px;
+  }
+  .text-content__title-secondary {
+    font-family: "Open Sans", serif;
+    font-size: 32px;
+    margin-top: 36px;
+  }
+  .tags {
+    display: block;
+  }
+  .tags .videosondemand__container {
+    padding-bottom: 137px;
+  }
+  .tags__list {
+    display: flex;
+    margin-left: 55px;
+  }
+  .tags__list li {
+    margin-right: 60px;
+  }
+  .tags__list a {
+    text-decoration: underline;
+    color: #115099;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .list__container-wrap {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .text-content .videosondemand__line {
+    margin-top: 36px;
+  }
+  .text-content__people {
+    padding-top: 35px;
+    padding-left: 70px;
+  }
+  .text-content__people li:first-child {
+    font-family: "IvyPresto-Light";
+    font-weight: 300;
+    font-size: 40px;
+    text-transform: inherit;
+    margin-bottom: 5px;
   }
 }
 @media screen and (min-width: 1440px) {
