@@ -921,7 +921,7 @@ nav,
 .text-content__title-secondary {
   font-family: "Playfair Display SC", serif;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 18px;
   line-height: 1.42;
   margin-top: 24px;
 }
@@ -953,7 +953,29 @@ nav,
   font-size: 20px;
   line-height: 1.5;
 }
-
+.text-content__decoration {
+  padding: 46px 20px 96px 20px;
+  background-color: var(--main-light-color);
+}
+.text-content__decoration .text-content__decoration__title {
+  margin-top: 0;
+}
+.juul__list {
+  display: flex;
+  justify-content: space-between;
+}
+.juul__list li {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: var(--main-dark-gray-color);
+  margin-bottom: 40px;
+}
+.juul__list li.active {
+  border-bottom: 1px solid var(--main-dark-blue-color);
+}
 @media screen and (min-width: 768px) {
   .hero__wrap {
     display: flex;
@@ -1272,7 +1294,8 @@ nav,
   }
   .resource__container,
   .banner-series__container,
-  .banner-episodes__container {
+  .banner-episodes__container,
+  .text-content__decoration {
     max-width: 1375px;
     margin: 0 auto;
   }
@@ -1459,6 +1482,7 @@ nav,
     font-family: "IvyPresto-Light";
     font-weight: 300;
     font-size: 60px;
+    text-transform: inherit;
   }
   .posts__container {
     margin-bottom: 120px;
@@ -1619,9 +1643,48 @@ nav,
     text-transform: inherit;
     margin-bottom: 5px;
   }
+  .text-content__decoration {
+    padding: 127px 36px 72px 36px;
+    border: 1px solid var(--main-black-color);
+  }
+  .text-content__decoration .text-content__title-secondary {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.42;
+    margin-top: 24px;
+  }
+  .text-content__zoom {
+    zoom: 0.7;
+  }
+  .juul__list li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 600;
+    font-size: 24px;
+    width: 446px;
+    height: 145px;
+    background-color: #255096;
+    color: #ffffff;
+    margin-bottom: 13px;
+  }
+  .juul__list li.active {
+    background-color: var(--main-light-color);
+    color: var(--main-dark-gray-color);
+    border: 1px solid var(--main-black-color);
+    border-bottom: 0;
+    margin-bottom: -2px;
+    height: auto;
+  }
 }
 @media screen and (min-width: 1200px) {
-  .events__wrap {
+  .events__wrap,
+  .text-content__zoom {
     zoom: 0.8;
   }
   .banner-series__container,
@@ -1636,7 +1699,8 @@ nav,
   .banner-series__container,
   .banner-episodes__container,
   .events__wrap,
-  .posts__item {
+  .posts__item,
+  .text-content__zoom {
     zoom: 1;
   }
   .casetypes__list li {
