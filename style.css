@@ -95,6 +95,10 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+.logo{
+  width: 255px;
+  height: 58px;
+}
 nav,
 .hero__menu {
   color: var(--main-light-color);
@@ -131,11 +135,17 @@ nav,
 }
 .mobile__menu li:hover,
 .mobile__menu li:focus,
-.hero__menu li:hover,
-.hero__menu li:focus,
 .menu li:hover,
 .menu li:focus {
-  font-weight: 700;
+  color: var(--main-light-blue-color);
+}
+.mobile__menu li:last-child:hover,
+.mobile__menu li:last-child:focus,
+.menu li:last-child:hover,
+.menu li:last-child:focus,
+.hero__menu li:hover,
+.hero__menu li:focus{
+  text-decoration: underline;
 }
 .hero__container {
   padding-top: 64px;
@@ -264,9 +274,7 @@ nav,
   height: 17px;
   margin-left: 22px;
 }
-.arrow__icon path {
-  fill: red;
-}
+
 .content .main__btn {
   margin-top: 64px;
   margin-bottom: 72px;
@@ -976,6 +984,124 @@ nav,
 .juul__list li.active {
   border-bottom: 1px solid var(--main-dark-blue-color);
 }
+footer{
+  background-color: var(--main-black-color);
+}
+.footer__container{
+  padding: 95px 40px 40px 40px;
+}
+.footer__container .logo{
+  margin-bottom: 79px;
+}
+.footer__menu{
+   margin-bottom: 42px;
+}
+.footer__menu ul{
+  margin-bottom: 42px;
+}
+.footer__menu li{
+  margin-bottom: 18px;
+}
+.footer__menu li:last-child{
+  margin-bottom: 0;
+}
+.footer__menu a{
+  font-family: "Proxima Nova Rg";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-light-color);
+}
+.footer__social-list{
+   display: flex;
+   flex-wrap: wrap;
+   margin-bottom: 40px;
+}
+.footer__social-list li{
+  margin-right: 12px;
+}
+.footer__social-list img{
+width: 47px;
+height: 47px;
+}
+.footer__features p{
+  font-family: "Proxima Nova Rg";
+  font-weight: 500;
+font-size: 20px;
+line-height: 122.5%;
+text-transform: uppercase;
+color: var(--main-light-color);
+margin-bottom: 16px;
+} 
+.footer__features ul{
+  margin-bottom: 47px;
+} 
+.footer__features li{
+  font-family: "IvyPresto-Light";
+  font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    font-size: 18px;
+    color: var(--main-light-color);
+}
+.footer__features li:last-child{
+  margin-bottom: 0;
+} 
+.footer__features span{
+  color: var(--main-light-blue-color);
+}
+.footer__contact-us p{
+  font-family: "IvyPresto-Light";
+color: var(--main-light-color);
+font-weight: 500;
+margin-bottom: 52px;
+font-size: 30px;
+line-height: 1.2;
+text-transform: uppercase;
+} 
+.footer__contact-us .main__btn{
+  font-weight: 600;
+  line-height: 110%;
+  color: var(--main-light-color);
+  font-size: 14px;
+  border-color: var(--main-light-color);
+  margin-bottom: 72px;
+}
+.footer__contact-us img{
+  margin-left: 5px;
+  width: 17px;
+  height: 17px;
+}
+.copyright__line{
+  opacity: 0.2;
+border-top: 1px solid var(--main-light-color);
+margin-bottom: 30px;
+}
+.copyright__text{
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 110%;
+  letter-spacing: 0.01em;
+  color: rgba(246,251,253,0.4);
+  margin-bottom: 24px;
+}
+.copyright__menu{
+  display: flex;
+  flex-wrap: wrap;
+}
+.copyright__menu li{
+  font-weight: 500;
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: 0.01em;
+    color: var(--main-light-color);
+    margin-right: 12px;
+}
+.copyright__menu li:last-child{
+  margin-right: 0;
+}
 @media screen and (min-width: 768px) {
   .hero__wrap {
     display: flex;
@@ -1155,6 +1281,27 @@ nav,
   .text-content__people img {
     margin-right: 82px;
   }
+  .footer__container{
+    padding-top: 85px;
+  }
+  .footer__container .logo{
+    margin-bottom: 47px;
+  }
+  .footer__wrap,
+  .copyright__wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+.footer__contact-us p{
+  width: 60%;
+}
+.copyright__text{
+  margin-bottom: 0;
+}
+.copyright__menu{
+  margin-bottom: 0;
+}
 }
 
 @media screen and (min-width: 1024px) {
@@ -1680,6 +1827,20 @@ nav,
     border-bottom: 0;
     margin-bottom: -2px;
     height: auto;
+  }
+  .footer__features p{
+    font-size: 24px;
+  }
+  .footer__features li{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .footer__contact-us p{
+  font-weight: 300;
+  font-size: 64px;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
